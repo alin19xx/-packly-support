@@ -14,19 +14,15 @@
             align-items: center;
             justify-content: center;
             font-family: 'Arial', sans-serif;
+            background-color: #000; /* Fondo negro */
+            color: #fff; /* Texto blanco */
         }
 
         .hero-section {
-            background: linear-gradient(135deg, #ff5f6d, #ffc371);
-            color: white;
             text-align: center;
             padding: 60px 20px;
             width: 100%;
             height: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
         }
 
         .hero-section h1 {
@@ -40,25 +36,32 @@
             margin-bottom: 30px;
         }
 
-        .btn-app {
-            margin: 5px;
+        .btn-contact {
+            margin: 10px 0;
             padding: 10px 20px;
+            font-size: 1rem;
             border-radius: 50px;
-            font-weight: bold;
+            background-color: #fff;
+            color: #000;
+            border: none;
         }
 
-        .btn-app-store {
+        .btn-contact:hover {
+            background-color: #f0f0f0;
+        }
+
+        .btn-store {
+            margin: 10px 0;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 50px;
             background-color: #000;
             color: #fff;
+            border: 2px solid #fff;
         }
 
-        .btn-google-play {
-            background-color: #34a853;
-            color: #fff;
-        }
-
-        .btn-app:hover {
-            opacity: 0.9;
+        .btn-store:hover {
+            background-color: #333;
         }
     </style>
 </head>
@@ -67,10 +70,9 @@
     <div class="hero-section">
         <h1>Welcome to Packly Support</h1>
         <p>If you need help, contact us at:</p>
-        <a href="mailto:support@packly.com" class="btn btn-light btn-lg mb-3">Contact Us</a>
-
+        <a href="mailto:support@packly.com" class="btn btn-contact">Contact Us</a>
         <div>
-            <a href="#" class="btn btn-app btn-app-store">Download on the App Store</a>
+            <a href="#" class="btn btn-store">Download on the App Store</a>
         </div>
     </div>
 
